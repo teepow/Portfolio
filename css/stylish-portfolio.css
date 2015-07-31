@@ -145,7 +145,7 @@ hr.small {
 }
 
 .call-to-action .btn {
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
 /* Footer */
@@ -256,9 +256,6 @@ footer {
 }
 
 .portfolio-links {
-    position: absolute;
-    bottom: 50px;
-    z-index: 1;
     visibility: hidden;
 }
 
@@ -267,7 +264,7 @@ footer {
 }
 
 .list-group-item {
-    width: 200px;
+    width: 40%;
     background-color: transparent;
     border: none;
 }
@@ -279,13 +276,47 @@ footer {
 
 .links-list {
     height: 55px;
-    margin-left: 1px;
-    margin-bottom: -20px;
-    width: 457.500px;
+    margin-left: .25px;
+    width: 100%;
     background-color: rgba(51, 122, 183, 0.65);
 }
 
 .links-list a {
     color: #ffffff;
     font-size: 1.25em;
+}
+
+noscript {
+    height: 55px;
+    width: 100%;
+    background-color: rgba(51, 122, 183, 0.65);
+}
+
+noscript a {
+    margin: 50px;
+    color: white;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-border {
+    border: 1px solid #ffffff;
+    width: 400px;
+    margin: 0 auto;
+    background-color: #2574A9;
+}
+
+/*Media Queries */
+
+@media screen and (max-width: 768px) {
+    .github-nav {
+        display: none !important;
+    }
 }
