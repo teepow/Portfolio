@@ -56,13 +56,13 @@
                         <a class="page-scroll" href="#top">Home</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#portfolio">Projects</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#technologies">Technologies</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#resume">Resume</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -83,15 +83,34 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-                <h1>HI. MY NAME IS TOM</h1>
+                <h1>HI, MY NAME IS TOM</h1>
                 <h3>I'M A WEB DEVELOPER LOOKING FOR WORK IN THE NYC/NJ AREA</h3>
                 <br>
                 <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
         </div>
     </header>
 
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Who I Am</h2>
+                    <hr class="small">
+                    <p class="lead">
+                        My name is Tom Powers, and I am a <span id="mostly">mostly</span> self-taught web developer. I have a Management Information Systems degree from the 
+                        County College of Morris. There I learned the basics of HTML, CSS, and JavaScript, as well as some other cool stuff like Java, Unix, and 
+                        network security. I realized I wasn't going to learn everything I wanted to at school, so I began teaching myself, utilizing online tutorials and resources (Treehouse, Code School, Lynda, Laracasts, PHP the Right Way), with a focus on PHP and Laravel. I am currently looking for a job as a back end or full stack junior developer where I can learn from more seasoned developers and contribute to great projects. 
+                    </p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
     <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio bg-primary">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
@@ -100,6 +119,12 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="portfolio-item">
+                                <h3>JS Game</h3>
+                                <h4>Built with JavaScript</h4>                                
+                                <p>
+                                    This is a simple game which uses JavaScript to display a red dot randomly about the page. When the user clicks a dot, the time the user took
+                                    to click the dot is recorded and another dot is presented. After twenty dots, the fastest, slowest, and total times are calculated and displayed.
+                                </p>
                                 <img class="img-portfolio img-responsive" src="img/js-game.png">
                                 <div class="portfolio-links">
                                     <ul class="list-inline links-list">
@@ -120,6 +145,13 @@
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
+                                <h3>PHP Function Flashcards</h3>
+                                <h4>Built with PHP. MySQL, and Jquery</h4>
+                                <p>
+                                    This is an application used to memorize php functions. I made a web scraper to scrape the php website and store the results in a MySQL database. The site uses php to display categories and subcategories based on selections made by the user. The flashcard page of the site uses 
+                                    JQuery to manipulate the DOM and make ajax calls to the PHP API and the JQuery <a href="http://nnattawat.github.io/flip/">Flip</a> plugin to 
+                                    flip the card.
+                                </p>
                                 <img class="img-portfolio img-responsive" src="img/flashcards.png">
                                 <div class="portfolio-links">
                                     <ul class="list-inline links-list">
@@ -140,6 +172,11 @@
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
+                                <h3>StartPage</h3>
+                                <h4>Built with Laravel, MySQL, and Bootstrap</h4>
+                                <p>
+                                    This is a homepage where the user can manage a todo list, pictures, a quote, and links to their favorite websites. It also connects to the Facebook API so the user can display their most recent posts. The site uses Bootstrap for the design and Laravel and MySQL on the back end with <a href="https://github.com/laravel/socialite">Socialite</a> to help with Facebook and Google OAuth and <a href="http://image.intervention.io/">Intervention Image</a> for image manipulation.
+                                </p>
                                 <img class="img-portfolio img-responsive" height="333" src="img/StartPage.png">
                                 <div class="portfolio-links">
                                     <ul class="list-inline links-list">
@@ -160,6 +197,12 @@
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
+                                <h3>CodeTeamUp</h3>
+                                <h4>Built with Laravel, MySql and Bootstrap</h4>
+                                <p>
+                                    This is a social networking site in which users select programming languages they would like to partner up using. Users can sort their matches
+                                    by language or by person with the most matches. Users can view each other's profiles and send messages back and forth. The site uses Bootstrap for the design and Laravel and MySQL on the back end with <a href="https://github.com/laravel/socialite">Socialite</a> to help with GitHub OAuth and <a href="http://image.intervention.io/">Intervention Image</a> for image manipulation.
+                                </p>
                                 <img class="img-portfolio img-responsive" src="img/codeteamup.png">
                                 <div class="portfolio-links">
                                     <ul class="list-inline links-list">
@@ -187,136 +230,136 @@
         <!-- /.container -->
     </section>
 
-    <!-- Technologies -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="technologies" class="technologies bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Technologies</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="technology-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa icon-html fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>HTML</strong>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="technology-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa icon-css fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>CSS</strong>
-                                </h4>
-                                <p>Sass Bootstrap</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="technology-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa icon-javascript fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>JAVASCRIPT</strong>
-                                </h4>
-                                <p>Jquery</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="technology-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa icon-php fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>PHP</strong>
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="technology-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="icon icon-icon-laravel fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>LARAVEL</strong>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="technology-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa icon-ubuntu fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>LINUX</strong>
-                                </h4>
-                                <p>Shell scripting</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="technology-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa icon-mysql fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>MYSQL</strong>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="technology-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="icon icon-git fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>GIT</strong>
-                                </h4>
-                                <p>GitHub</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- About -->
-    <section id="about" class="about">
+    <!-- Resume -->
+    <section id="resume" class="resume">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="text-center">Resume</h2>
+                    <h2 class="text-center resume-header">Resume</h2>
                     <hr class="small">
+
+                    <div class="panel panel-primary technologies">
+                        <div class="panel-heading">Technologies</div>
+                        <div class="panel-body">
+                            <div class="container">
+                                <div class="row text-center">
+                                    <div class="col-lg-10 col-lg-offset-1">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="technology-item">
+                                                    <span class="fa-stack fa-4x">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i class="fa icon-html fa-stack-1x text-primary"></i>
+                                                </span>
+                                                    <h4>
+                                                        <strong>HTML</strong>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="technology-item">
+                                                    <span class="fa-stack fa-4x">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i class="fa icon-css fa-stack-1x text-primary"></i>
+                                                </span>
+                                                    <h4>
+                                                        <strong>CSS</strong>
+                                                    </h4>
+                                                    <p>Sass Bootstrap</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="technology-item">
+                                                    <span class="fa-stack fa-4x">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i class="fa icon-javascript fa-stack-1x text-primary"></i>
+                                                </span>
+                                                    <h4>
+                                                        <strong>JAVASCRIPT</strong>
+                                                    </h4>
+                                                    <p>Jquery</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="technology-item">
+                                                    <span class="fa-stack fa-4x">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i class="fa icon-php fa-stack-1x text-primary"></i>
+                                                </span>
+                                                    <h4>
+                                                        <strong>PHP</strong>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.row (nested) -->
+                                    </div>
+                                    <!-- /.col-lg-10 -->
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                            <!-- /.container -->
+                            <div class="container">
+                                <div class="row text-center">
+                                    <div class="col-lg-10 col-lg-offset-1">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="technology-item">
+                                                    <span class="fa-stack fa-4x">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i class="icon icon-icon-laravel fa-stack-1x text-primary"></i>
+                                                </span>
+                                                    <h4>
+                                                        <strong>LARAVEL</strong>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="technology-item">
+                                                    <span class="fa-stack fa-4x">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i class="fa icon-ubuntu fa-stack-1x text-primary"></i>
+                                                </span>
+                                                    <h4>
+                                                        <strong>LINUX</strong>
+                                                    </h4>
+                                                    <p>Shell scripting</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="technology-item">
+                                                    <span class="fa-stack fa-4x">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i class="fa icon-mysql fa-stack-1x text-primary"></i>
+                                                </span>
+                                                    <h4>
+                                                        <strong>MYSQL</strong>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="technology-item">
+                                                    <span class="fa-stack fa-4x">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i class="icon icon-git fa-stack-1x text-primary"></i>
+                                                </span>
+                                                    <h4>
+                                                        <strong>GIT</strong>
+                                                    </h4>
+                                                    <p>GitHub</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.row (nested) -->
+                                    </div>
+                                    <!-- /.col-lg-10 -->
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                        <!-- /.container -->
+                        </div>
+                    </div>
+
                     <div class="panel panel-primary education">
                         <div class="panel-heading">Education</div>
                         <div class="panel-body">
@@ -380,24 +423,30 @@
 
     <!-- Call to Action -->
     <section class="call-to-action bg-primary" id="contact">
-        <h2>Contact</h2>
-        <hr class="small">
-        <div class="form-border">
-            <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="name" class="form-control" id="name" placeholder="Name">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Contact</h2>
+                    <hr class="small">
+                    <div class="form-border">
+                        <form method="post" action="http://104.131.176.203/mailTest.php">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="name" class="form-control" id="name" name="name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="7" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-default">Send</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="7" placeholder="Message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-default">Send</button>
-            </form>
+            </div>
         </div>
     </section>
 

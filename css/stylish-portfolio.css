@@ -96,16 +96,6 @@ hr.small {
     padding: 50px 0;
 }
 
-/* Technologies */
-
-.technologies {
-    padding: 50px 0;
-}
-
-.technology-item {
-    margin-bottom: 30px;
-}
-
 /* Callout */
 
 .callout {
@@ -124,6 +114,7 @@ hr.small {
 
 .portfolio {
     padding: 50px 0;
+    background-color: #337ab7;
 }
 
 .portfolio-item {
@@ -138,6 +129,14 @@ hr.small {
     opacity: 0.8;
 }
 
+.portfolio-item p {
+    text-align: left;
+    height: 120px;
+}
+
+.portfolio-item p a {
+    color: #f1c40f;
+}
 /* Call to Action */
 
 .call-to-action {
@@ -157,6 +156,12 @@ footer {
 .icon-icon-laravel:before { content: "\f100"; }
 
 /* Added Styles */
+
+#mostly {
+    color: #337ab7;
+    font-weight: 500;
+    font-style: italic;
+}
 
 .icon-icon-laravel {
     margin: -2.5px 5px;
@@ -208,11 +213,11 @@ footer {
     height: 55px;
     margin-left: .25px;
     width: 100%;
-    background-color: rgba(51, 122, 183, 0.65);
+    background-color: #ffffff;
 }
 
 .links-list a {
-    color: #ffffff;
+    color: #337ab7;
     font-size: 1.25em;
 }
 
@@ -258,24 +263,36 @@ h2 {
     font-style: italic;
 }
 
-.education {
+.education, .technologies {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
 
-.work-experience {
+.work-experience, .education {
     margin-top: -20px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
 }
 
-.work-experience .panel-heading {
+.work-experience .panel-heading, .education .panel-heading {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
 }
 
 .lead {
     font-weight: 500;
+}
+
+.resume-header {
+    padding-top: 50px;
+}
+
+.technology-item {
+    margin-bottom: 30px;
+}
+
+.fa-circle {
+    color: #ffffff;
 }
 
 /* Icomoon */
@@ -350,6 +367,16 @@ h2 {
 }
 
 /*Media Queries */
+
+@media screen and (max-width: 460px) {
+    form, .form-border {
+        width: auto;
+    }
+
+    .portfolio-item p {
+        height: auto;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .github-nav {
