@@ -69,7 +69,7 @@ hr.small {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: purple;
+    color: #337ab7;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -224,12 +224,12 @@ footer {
 noscript {
     height: 55px;
     width: 100%;
-    background-color: rgba(51, 122, 183, 0.65);
+    background-color: #ffffff;
 }
 
 noscript a {
     margin: 50px;
-    color: white;
+    color: #337ab7;
 }
 
 form {
@@ -260,7 +260,6 @@ h2 {
     margin-top: -15px;
     margin-bottom: -5px;
     padding-left: 15px;
-    font-style: italic;
 }
 
 .education, .technologies {
@@ -293,6 +292,16 @@ h2 {
 
 .fa-circle {
     color: #ffffff;
+}
+
+.list-inline li {
+    border: none;
+    padding-left: 15px;
+}
+
+.alert {
+    width: 50%;
+    margin: 0 auto 20px;
 }
 
 /* Icomoon */
