@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -102,7 +103,7 @@
                     <p class="lead">
                         My name is Tom Powers, and I am a <span id="mostly">mostly</span> self-taught web developer. I have a Management Information Systems degree from the 
                         County College of Morris. There I learned the basics of HTML, CSS, and JavaScript, as well as some other cool stuff like Java, Unix, and 
-                        network security. I realized I wasn't going to learn everything I wanted to at school, so I began teaching myself, utilizing online tutorials and resources (Treehouse, Code School, Lynda, Laracasts, PHP the Right Way), with a focus on PHP and Laravel. I am currently looking for a job as a back end or full stack junior developer where I can learn from more seasoned developers and contribute to great projects. 
+                        network security. I realized I wasn't going to learn everything I wanted to at school, so I began teaching myself, utilizing online tutorials and resources (Treehouse, Code School, Lynda, Laracasts, PHP the Right Way) with a focus on PHP and Laravel. I am currently looking for a job as a back end junior developer where I can learn from more seasoned developers and contribute to great projects. 
                     </p>
                 </div>
             </div>
@@ -121,54 +122,55 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <h3>JS Game</h3>
-                                <h4>Built with JavaScript</h4>                                
+                                <h3>Random Movie Generator</h3>
+                                <h4>Built with PHP and TMDB API</h4>                                
                                 <p>
-                                    This is a simple game which uses JavaScript to display a red dot randomly about the page. When the user clicks a dot, the time the user took
-                                    to click the dot is recorded and another dot is presented. After twenty dots, the fastest, slowest, and total times are calculated and displayed.
+                                    This site displays a random movie from the TMDB API based on a year and genre that the user chooses. This was kind of tricky because the TMDB API
+                                    only allows you to get 20 results at a time, so I had to get a little creative with my queries. I randomly generated a rating and randomly generated 
+                                    whether to query movies with ratings less than or greater than the value. Then I randomly generated one of fourteen sort orders. 
+                                    This ensured that I didn't get the same 20 movies every time and keep them as random as possible.
                                 </p>
-                                <img class="img-portfolio img-responsive" src="img/js-game.png">
+                                <img class="img-portfolio img-responsive" src="img/Random-Movie-Generator.png">
                                 <div class="portfolio-links">
                                     <ul class="list-inline links-list">
                                         <li class="list-group-item-template">
-                                            <a target="_blank" href="http://www.jsgame.tompowers.xyz">Visit Site</a>
+                                            <a target="_blank" href="http://www.random-movie-generator.tompowers.xyz">Visit Site</a>
                                         </li>
                                         <li class="list-group-item-template">
-                                            <a target="_blank" href="https://www.github.com/teepow/JS-Game">GitHub Repo</a>
+                                            <a target="_blank" href="https://github.com/teepow/Random-Movie-Generator">GitHub Repo</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!-- Non JavaScript users -->
                                 <noscript>
-                                    <a target="_blank" href="http://www.jsgame.tompowers.xyz">Visit Site</a>
-                                    <a href="https://www.github.com/teepow/JS-Game">Github Repo</a>
+                                    <a target="_blank" href="http://www.random-movie-generator.tompowers.xyz">Visit Site</a>
+                                    <a href="https://github.com/teepow/Random-Movie-Generator">Github Repo</a>
                                 </noscript>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <h3>PHP Function Flashcards</h3>
-                                <h4>Built with PHP, MySQL, and Jquery</h4>
+                                <h3>CodeTeamUp</h3>
+                                <h4>Built with Laravel, MySql, and Bootstrap</h4>
                                 <p>
-                                    This is an application used to memorize php functions (it's not exactly practical). I made a web scraper to scrape the php website and store the results in a MySQL database. The site uses php to display categories and subcategories based on selections made by the user. The flashcard page of the site uses 
-                                    JQuery to manipulate the DOM and make ajax calls to the PHP API and the JQuery <a href="http://nnattawat.github.io/flip/">Flip</a> plugin to 
-                                    flip the card.
+                                    This is a social networking site in which users select programming languages they would like to partner up using. Users can sort their matches
+                                    by language or by person with the most matches. Users can view each other's profiles and send messages back and forth. The site uses Bootstrap for the design and Laravel and MySQL on the back end with <a href="https://github.com/laravel/socialite">Socialite</a> to help with GitHub OAuth and <a href="http://image.intervention.io/">Intervention Image</a> for image manipulation. Deployed with Laravel Forge.
                                 </p>
-                                <img class="img-portfolio img-responsive" src="img/flashcards.png">
+                                <img class="img-portfolio img-responsive" src="img/codeteamup.png">
                                 <div class="portfolio-links">
                                     <ul class="list-inline links-list">
                                         <li class="list-group-item-template">
-                                            <a target="_blank" href="http://www.flashcards.tompowers.xyz">Visit Site</a>
+                                            <a target="_blank" href="http://www.codeteamup.tompowers.xyz">Visit Site</a>
                                         </li>
                                         <li class="list-group-item-template">
-                                            <a target="_blank" href="https://www.github.com/teepow/php-flashcards">GitHub Repo</a>
+                                            <a target="_blank" href="https://www.github.com/teepow/CodeTeamUp">GitHub Repo</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!-- Non JavaScript users -->
                                 <noscript>
-                                    <a target="_blank" href="http://www.flashcards.tompowers.xyz">Visit Site</a>
-                                    <a href="https://www.github.com/teepow/php-flashcards">Github Repo</a>
+                                    <a target="_blank" href="http://www.codeteamup.tompowers.xyz">Visit Site</a>
+                                    <a href="https://www.github.com/teepow/CodeTeamUp">Github Repo</a>
                                 </noscript>
                             </div>
                         </div>
@@ -199,27 +201,28 @@
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <h3>CodeTeamUp</h3>
-                                <h4>Built with Laravel, MySql, and Bootstrap</h4>
+                                <h3>PHP Function Flashcards</h3>
+                                <h4>Built with PHP, MySQL, and Jquery</h4>
                                 <p>
-                                    This is a social networking site in which users select programming languages they would like to partner up using. Users can sort their matches
-                                    by language or by person with the most matches. Users can view each other's profiles and send messages back and forth. The site uses Bootstrap for the design and Laravel and MySQL on the back end with <a href="https://github.com/laravel/socialite">Socialite</a> to help with GitHub OAuth and <a href="http://image.intervention.io/">Intervention Image</a> for image manipulation. Deployed with Laravel Forge.
+                                    This is an application used to memorize php functions (it's not exactly practical). I made a web scraper to scrape the php website and store the results in a MySQL database. The site uses php to display categories and subcategories based on selections made by the user. The flashcard page of the site uses 
+                                    JQuery to manipulate the DOM and make ajax calls to the PHP API and the JQuery <a href="http://nnattawat.github.io/flip/">Flip</a> plugin to 
+                                    flip the card.
                                 </p>
-                                <img class="img-portfolio img-responsive" src="img/codeteamup.png">
+                                <img class="img-portfolio img-responsive" src="img/flashcards.png">
                                 <div class="portfolio-links">
                                     <ul class="list-inline links-list">
                                         <li class="list-group-item-template">
-                                            <a target="_blank" href="http://www.codeteamup.tompowers.xyz">Visit Site</a>
+                                            <a target="_blank" href="http://www.flashcards.tompowers.xyz">Visit Site</a>
                                         </li>
                                         <li class="list-group-item-template">
-                                            <a target="_blank" href="https://www.github.com/teepow/CodeTeamUp">GitHub Repo</a>
+                                            <a target="_blank" href="https://www.github.com/teepow/php-flashcards">GitHub Repo</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!-- Non JavaScript users -->
                                 <noscript>
-                                    <a target="_blank" href="http://www.codeteamup.tompowers.xyz">Visit Site</a>
-                                    <a href="https://www.github.com/teepow/CodeTeamUp">Github Repo</a>
+                                    <a target="_blank" href="http://www.flashcards.tompowers.xyz">Visit Site</a>
+                                    <a href="https://www.github.com/teepow/php-flashcards">Github Repo</a>
                                 </noscript>
                             </div>
                         </div>
@@ -393,8 +396,8 @@
                         <div class="panel-heading">Work Experience</div>
 
                         <div class="panel-body">
-                                <p class="lead">County College of Morris Information Systems Department</p>
-                                <p class="indent">Tutor | <i>January 2015 - May 2015</i></p>
+                                <p class="lead">Tutor</p>
+                                <p class="indent">County College of Morris Information Systems Department | <i>January 2015 - May 2015</i></p>
                         </div>
 
                         <ul class="list-group">
@@ -404,8 +407,8 @@
                         </ul>
 
                         <div class="panel-body">
-                            <p class="lead">County College of Morris Testing Center</p>
-                            <p class="indent">Front Desk | <i>December 2013 - August 2014</i></p>
+                            <p class="lead">Front Desk</p>
+                            <p class="indent">County College of Morris Testing Center | <i>December 2013 - August 2014</i></p>
                         </div>
 
                         <ul class="list-group">
@@ -415,14 +418,14 @@
                         </ul>
 
                         <div class="panel-body">
-                            <p class="lead">Target</p>
-                            <p class="indent">Flow Team Member | <i>Novemember 2013 - May 2014</i></p>
+                            <p class="lead">Flow Team Member</p>
+                            <p class="indent">Target | <i>Novemember 2013 - May 2014</i></p>
                         </div>
 
                         <ul class="list-group">
                             <li class="list-group-item">Was part of a team responsible for unloading trucks and filling the shelves.</li>
                             <li class="list-group-item">Worked with deadlines on a daily basis.</li>
-                            <li class="list-group-item">Regularly interacted with and assisted cutomers.</li>
+                            <li class="list-group-item">Regularly interacted with and assisted customers.</li>
                         </ul>
 
                     </div>
