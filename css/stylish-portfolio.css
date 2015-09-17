@@ -137,6 +137,10 @@ hr.small {
 .portfolio-item p a {
     color: #f1c40f;
 }
+
+.project-link {
+    color: #f1c40f;
+}
 /* Call to Action */
 
 .call-to-action {

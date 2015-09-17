@@ -122,10 +122,10 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <h3>Random Movie Generator</h3>
+                                <h3><a target="_blank" href="http://www.random-movie-generator.tompowers.xyz" class="project-link">Random Movie Generator</a></h3>
                                 <h4>Built with PHP and TMDB API</h4>                                
                                 <p>
-                                    This site displays a random movie from the TMDB API based on a year and genre that the user chooses. This was kind of tricky because the TMDB API
+                                    This site displays a random movie from the <a href="https://www.themoviedb.org/faq/api?language=en">TMDB API</a> based on a year and genre that the user chooses. This was kind of tricky because the TMDB API
                                     only allows you to get 20 results at a time, so I had to get a little creative with my queries. I randomly generated a rating and randomly generated 
                                     whether to query movies with ratings less than or greater than the value. Then I randomly generated one of fourteen sort orders. 
                                     This ensured that I didn't get the same 20 movies every time and keep them as random as possible.
@@ -150,7 +150,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <h3>CodeTeamUp</h3>
+                                <h3><a target="_blank" href="http://www.codeteamup.tompowers.xyz" class="project-link">CodeTeamUp</a></h3>
                                 <h4>Built with Laravel, MySql, and Bootstrap</h4>
                                 <p>
                                     This is a social networking site in which users select programming languages they would like to partner up using. Users can sort their matches
@@ -176,10 +176,10 @@
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <h3>StartPage</h3>
+                                <h3><a target="_blank" href="http://www.startpage.tompowers.xyz" class="project-link">StartPage</a></h3>
                                 <h4>Built with Laravel, MySQL, and Bootstrap</h4>
                                 <p>
-                                    This is a homepage where the user can manage a todo list, pictures, a quote, and links to their favorite websites. It also connects to the Facebook API so the user can display their most recent posts. The site uses Bootstrap for the design and Laravel and MySQL on the back end with <a href="https://github.com/laravel/socialite">Socialite</a> to help with Facebook and Google OAuth and <a href="http://image.intervention.io/">Intervention Image</a> for image manipulation. Deployed with Laravel Forge.
+                                    This is a homepage where the user can manage a todo list, pictures, a quote, and links to their favorite websites. It also connects to the Facebook API so the user can display their most recent posts. The site uses Bootstrap for the design and Laravel and MySQL on the back end with <a href="https://github.com/laravel/socialite">Socialite</a> to help with Facebook and Google OAuth, <a href="http://image.intervention.io/">Intervention Image</a> for image manipulation, and the <a href="https://github.com/facebook/facebook-php-sdk-v4">Facebook PHP SDK</a>  to access the Facebook Graph API. Deployed with Laravel Forge.
                                 </p>
                                 <img class="img-portfolio img-responsive" height="333" src="img/StartPage.png">
                                 <div class="portfolio-links">
@@ -201,7 +201,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <h3>PHP Function Flashcards</h3>
+                                <h3><a target="_blank" href="http://www.flashcards.tompowers.xyz" class="project-link">PHP Function Flashcards</a></h3>
                                 <h4>Built with PHP, MySQL, and Jquery</h4>
                                 <p>
                                     This is an application used to memorize php functions (it's not exactly practical). I made a web scraper to scrape the php website and store the results in a MySQL database. The site uses php to display categories and subcategories based on selections made by the user. The flashcard page of the site uses 
